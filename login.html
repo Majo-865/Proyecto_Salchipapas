@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo"> <img src="./img/logo.png" alt="logo"></div>
+        <div class="nombre"> <strong><i> Salchi-Mix: El sabor que te hace click!</i></strong></div>
+        <div class="menu-icon" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+         </div>
+        <nav class="menu" id="nav-menu">
+            <ul>
+                <li><a href="index.html">Página Principal </a></li>
+                <li><a href="menusalchipapas.html"> Menú salchipapas </a></li>
+                <li><a href="menuham.html"> Menú hamburguesas </a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="login-container">
+    <form class="login-form">
+        <h2>Bienvenido de nuevo</h2>
+        <p>Entra para gestionar tus pedidos</p>
+        
+        <div class="input-group">
+            <label for="username">Usuario o Email</label>
+            <input type="text" id="username" placeholder="Ej: urban_burger" required>
+        </div>
+
+        <div class="input-group">
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" placeholder="••••••••" required>
+        </div>
+
+        <button type="submit" class="btn-login">Ingresar</button>
+        
+        <div class="form-footer">
+            <a href="#">¿Olvidaste tu contraseña?</a>
+            <span>¿No tienes cuenta? <a href="#">Regístrate</a></span>
+
+  <footer>
+
+    <!---Links para tomar los íconos de la librería vectorial-->
+    <div class="redes">
+        <a href="https://www.instagram.com/#tu_usuario#" target="_blank">
+        <i class="fa-brands fa-instagram"></i> 
+        </a>
+    
+    
+        <a href="https://www.facebook.com/#tu_pagina#" target="_blank">
+        <i class="fa-brands fa-facebook"></i> 
+        </a>
+    
+   
+        <a href="https://www.tiktok.com/#@tu_usuario#" target="_blank">
+        <i class="fa-brands fa-tiktok"></i>
+        </a>
+
+        <a href="https://wa.me/573159492619" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+    
+    </footer>
+    <script>
+document.querySelector('.login-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Evita que la página se refresque
+    
+    const usuario = document.getElementById('username').value;
+    const pass = document.getElementById('password').value;
+
+    // Simulación de validación
+    if(usuario === "admin" && pass === "1234") {
+        alert("¡Bienvenido Chef! Entrando al sistema...");
+        window.location.href = "index.html"; // Lo mandas al inicio
+    } else {
+        alert("Usuario o contraseña incorrectos. Intenta con admin/1234");
+    }
+});
+</script>
+    <script src="script.js"></script>
+
+
+</body>
+</html>
