@@ -264,3 +264,4 @@ footer{
     transform: translateY(-3px);  /* Pequeño salto */
     display: inline-block;        /* Necesario para que el transform funcione */
 }
+

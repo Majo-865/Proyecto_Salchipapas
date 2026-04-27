@@ -36,22 +36,27 @@
                     <li>La Clásica Urbana: Nuestra versión de la hamburguesa tradicional con carne de res 100% artesanal, queso cheddar fundido, lechuga fresca y tomate, terminada con nuestra salsa especial de la casa. Con acompañamiento de papas fritas. 
                        <br></br>
                        <p>12.000 </p> 
+                       <button class="btn-agregar" data-nombre="Clasica urbana" data-precio="12.000"> Agregar al pedido</button>
                     </li>
                     <li> Burger Criolla: Jugosa carne de res acompañada de huevo frito, hogao casero, tajadas de maduro y lechuga crespa en pan artesanal. Con acompañamiento de papas fritas.
                         <br></br>
                         <p>14.000</p>
+                        <button class="btn-agregar" data-nombre="Burguer Criolla" data-precio="14.000"> Agregar al pedido</button>
                     </li>
                     <li>Doble Tentación: Para los más valientes: doble carne de res, doble queso cheddar, tocineta ahumada y un toque de cebolla caramelizada que resalta todos los sabores. Con acompañamiento de papas fritas.
                         <br></br>
                         <p>16.000</p>
+                        <button class="btn-agregar" data-nombre="Doble Tentación" data-precio="16.000"> Agregar al pedido</button>
                     </li>
                     <li>La BBQ-Crunch: Carne jugosa bañada en salsa BBQ artesanal, aros de cebolla apanados y queso mozzarella, ideal para quienes buscan una textura crocante en cada bocado. Con acompañamiento de papas fritas.
                         <br></br>
                         <p>17.000</p>
+                        <button class="btn-agregar" data-nombre="BBQ Cruch" data-precio="17.000"> Agregar al pedido</button>
                     </li>
                     <li>Hamburguesa de la Casa (Special Edition): Nuestra joya de la corona con carne de res, huevo frito, jamón, queso y una cama de vegetales frescos, servida en pan brioche sellado con mantequilla. Con acompañamiento de papas fritas.
                         <br></br>
                         <p>19.000</p>
+                        <button class="btn-agregar" data-nombre="Hamburguesa de la Casa" data-precio="19.000"> Agregar al pedido</button>
                     </li>
                 </ul>
                 
@@ -83,7 +88,19 @@
         </a>
     </div>
     
+    <!---- TABLERO DE PEDIDOS, Con esto se debería crear una barra fija que se muestre cuando haya productos.-->
+
+    <div id="tablero-pedidos" class="tablero-container hidden">
+    <div class="resumen-pedido">
+        <p><strong>Tu Pedido:</strong> <span id="lista-items">Nada seleccionado</span></p>
+        <p><strong>Total:</strong> $<span id="total-precio">0</span></p>
+    </div>
+    <button id="btn-whatsapp" class="btn-pedir">
+        <i class="fab fa-whatsapp"></i> Pedir ahora
+    </button>
+    </div>
     </footer>
     <script src="script.js"></script>
+    <script src="pedido.js"></script>
 </body>
 </html>

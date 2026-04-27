@@ -9,3 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             navMenu.classList.toggle('active');
         });
     }})
+
+    let pedido = [];
+let total = 0;
+

@@ -167,6 +167,16 @@ container-menu:hover,
     position: relative;
 }
 
+/*Estetica de lo botones de "AGREGAR"*/
+.btn-agregar {
+    background-color: #ffbf00; 
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
 /* RESPONSIVO SIMPLE EN MÓVILES*/
 @media (max-width: 768px) {
     main {
@@ -227,4 +237,37 @@ footer{
      color: rgb(211, 2, 2) !important;        /* Cambia a rojo al pasar el mouse */
     transform: translateY(-3px);  /* Pequeño salto */
     display: inline-block;        /* Necesario para que el transform funcione */
+}
+
+.tablero-container {
+    position: fixed;
+    bottom: 40px; /* Se coloca justo encima de tu footer de 40px */
+    left: 0;
+    width: 100%;
+    background: rgba(26, 26, 26, 0.95);
+    border-top: 2px solid #ffc107; /* Amarillo para resaltar */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    z-index: 1000;
+    box-shadow: 0 -5px 15px rgba(0,0,0,0.5);
+}
+
+.tablero-container.hidden { display: none; }
+
+.resumen-pedido p {
+    color: whitesmoke;
+    margin: 2px 0;
+    font-size: 0.9rem;
+}
+
+.btn-pedir {
+    background-color: #25d366;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
 }

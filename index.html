@@ -135,9 +135,19 @@
         </a>
     </div>
     
-    
+    <!---- TABLERO DE PEDIDOS, Con esto se debería crear una barra fija que se muestre cuando haya productos.-->
+    <div id="tablero-pedidos" class="tablero-container hidden">
+    <div class="resumen-pedido">
+        <p><strong>Tu Pedido:</strong> <span id="lista-items">Nada seleccionado</span></p>
+        <p><strong>Total:</strong> $<span id="total-precio">0</span></p>
+    </div>
+    <button id="btn-whatsapp" class="btn-pedir">
+        <i class="fab fa-whatsapp"></i> Pedir ahora
+    </button>
+    </div>
     </footer>
     <script src="script.js"></script>
+    <script src="pedido.js"></script>
 </body>
 </html>
 <!--fa-brands: Indica que el icono que buscas es una marca registrada.
