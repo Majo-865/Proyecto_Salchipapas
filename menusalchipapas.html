@@ -29,60 +29,71 @@
     </header>
 
 
-   <main>
+    <main>
     <div class="container-base">🍟 Elige tu base:
         <div class="base">
             <ul>
-                <li>Personal: Base de papas y salchicha, 2 toppings y 2 salsas.  
-                    <br></br>
-                    <p>14.000</p>
+                <li>
+                    <label>
+                        <input type="radio" name="base-papa" class="base-seleccionada" 
+                               data-nombre="Personal" data-precio="14000" data-limite-t="2" data-limite-s="2">
+                        Personal: 2 toppings y 2 salsas ($14.000)
+                    </label>
                 </li>
-                <li>Sencilla: Base de papas y salchicha, 3 topping y 3 salsas.
-                    <br></br>
-                    <p>15.000</p>
+                <li>
+                    <label>
+                        <input type="radio" name="base-papa" class="base-seleccionada" 
+                               data-nombre="Sencilla" data-precio="15000" data-limite-t="3" data-limite-s="3">
+                        Sencilla: 3 toppings y 3 salsas ($15.000)
+                    </label>
                 </li>
-                <li>Big Mix: base de papas,salchicha y chorizo, 3 toppings y 4 salsas.
-                    <br></br>
-                    <p>20.000</p>
+                <li>
+                    <label>
+                        <input type="radio" name="base-papa" class="base-seleccionada" 
+                               data-nombre="Big Mix" data-precio="20000" data-limite-t="3" data-limite-s="4">
+                        Big Mix: 3 toppings y 4 salsas ($20.000)
+                    </label>
                 </li>
-                <li>Mix Familiar: Base de papas, salchicha, chorizo y queso, 4 toppings y 5 salsas
-                    <br></br>
-                    <p>26.000</p>
-
+                <li>
+                    <label>
+                        <input type="radio" name="base-papa" class="base-seleccionada" 
+                               data-nombre="Mix Familiar" data-precio="26000" data-limite-t="4" data-limite-s="5">
+                        Mix Familiar: 4 toppings y 5 salsas ($26.000)
+                    </label>
                 </li>
             </ul>
         </div>
     </div>
 
-    <div class="container-toppings">🥓 Añade toppings: Añade la cantidad que te permita tu base. Por cada extra se cargan 3.000 a la cuenta.
+    <div class="container-toppings">🥓 Añade toppings:
         <div class="toppings">
             <ul>
-                <li>Salchicha</li>
-                <li>Chorizo</li>
-                <li>Jamón</li>
-                <li>Queso</li>
-                <li>Cebolla</li>
-                <li>Tomate</li>
-                
+                <li><label><input type="checkbox" class="topping" value="Salchicha"> Salchicha</label></li>
+                <li><label><input type="checkbox" class="topping" value="Chorizo"> Chorizo</label></li>
+                <li><label><input type="checkbox" class="topping" value="Jamón"> Jamón</label></li>
+                <li><label><input type="checkbox" class="topping" value="Queso"> Queso</label></li>
+                <li><label><input type="checkbox" class="topping" value="Cebolla"> Cebolla</label></li>
+                <li><label><input type="checkbox" class="topping" value="Tomate"> Tomate</label></li>
             </ul>
         </div>
     </div>
 
-    <div class="container-Salsas">🌶️ No te olvides de las salsas: Añade la cantidad que te permita tu base. Por cada extra se cargan 3.000 a la cuenta.
-        <div class="toppings">
+    <div class="container-Salsas">🌶️ No te olvides de las salsas:
         <div class="Salsas">
             <ul>
-                <li>BBQ</li>
-                <li>Tártara</li>
-                <li>Piña</li>
-                <li>Salsa rosada</li>
-                <li>Salsa de tomate</li>
-                <li>Salsa de ajo</li>
+                <li><label><input type="checkbox" class="salsa" value="BBQ"> BBQ</label></li>
+                <li><label><input type="checkbox" class="salsa" value="Tártara"> Tártara</label></li>
+                <li><label><input type="checkbox" class="salsa" value="Piña"> Piña</label></li>
+                <li><label><input type="checkbox" class="salsa" value="Salsa rosada"> Salsa rosada</label></li>
+                <li><label><input type="checkbox" class="salsa" value="Salsa de ajo"> Salsa de ajo</label></li>
             </ul>
         </div>
     </div>
-</main>
 
+    <button id="btn-agregar-salchipapa" style="margin: 20px; padding: 10px; background: #ffc107; border: none; cursor: pointer; font-weight: bold;">
+        AGREGAR AL PEDIDO
+    </button>
+</main>
     <footer>
 
     <!---Links para tomar los íconos de la librería vectorial-->
@@ -117,7 +128,6 @@
         <i class="fab fa-whatsapp"></i> Pedir ahora
     </button>
     </div>
-    
     </footer>
     <script src="script.js"></script>
     <script src="pedido.js"></script>
